@@ -91,11 +91,11 @@
 	BOOL m_isAzureRequest;
 }
 
-@property ( nonatomic , retain , getter=getDelegate , setter=setDelegate) id<ObjectContextDelegate> m_delegate;
+@property ( nonatomic , retain , getter=getDelegate , setter=setDelegate:) id<ObjectContextDelegate> m_delegate;
 
-@property ( nonatomic , retain , getter=getEntitySetUrl , setter=setEntitySetUrl) NSString *m_entitySetUrl;
-@property ( nonatomic , retain , getter=getContext , setter=setContext ) ObjectContext *m_context;
-@property ( nonatomic , assign , getter=isAzureRequest , setter=setAzureRequest) BOOL m_isAzureRequest;
+@property ( nonatomic , retain , getter=getEntitySetUrl , setter=setEntitySetUrl:) NSString *m_entitySetUrl;
+@property ( nonatomic , retain , getter=getContext , setter=setContext: ) ObjectContext *m_context;
+@property ( nonatomic , assign , getter=isAzureRequest , setter=setAzureRequest:) BOOL m_isAzureRequest;
 
 - (id) initWithUri:(NSString*)anEntitySetUrl objectContext:(ObjectContext*)anObjectContext;
 

@@ -30,12 +30,12 @@
 	NSInteger               m_inlineCountValue;
 }
 
-@property ( nonatomic , retain , getter=getError ,					setter=setInnerException			) NSString *m_innerException;
-@property ( nonatomic , assign , getter=getStatusCode ,				setter=setStatusCode				) NSInteger m_statusCode;
-@property ( nonatomic , retain , getter=getQuery ,					setter=setQuery						) NSString *m_query;
-@property ( nonatomic , assign , getter=getCountValue ,				setter=setCountValue				) NSInteger m_countValue;
-@property ( nonatomic , retain , getter=getObjectIDToNextLinkUrl,	setter=setObjectIDToNextLinkUrl		) NSMutableDictionary		*m_objectIDToNextLinkUrl;
-@property ( nonatomic , assign , getter=getInlineCountValue ,		setter=setInlineCountValue		    ) NSInteger m_inlineCountValue;
+@property ( nonatomic , retain , getter=getError ,					setter=setInnerException:			) NSString *m_innerException;
+@property ( nonatomic , assign , getter=getStatusCode ,				setter=setStatusCode:				) NSInteger m_statusCode;
+@property ( nonatomic , retain , getter=getQuery ,					setter=setQuery:						) NSString *m_query;
+@property ( nonatomic , assign , getter=getCountValue ,				setter=setCountValue:				) NSInteger m_countValue;
+@property ( nonatomic , retain , getter=getObjectIDToNextLinkUrl,	setter=setObjectIDToNextLinkUrl:		) NSMutableDictionary		*m_objectIDToNextLinkUrl;
+@property ( nonatomic , assign , getter=getInlineCountValue ,		setter=setInlineCountValue:		    ) NSInteger m_inlineCountValue;
 
 
 - (id) initWithValues:(NSDictionary*) aHeaders innerException:(NSString*)anInnerException statusCode:(NSInteger) aStatusCode query:(NSString*) aQuery;
